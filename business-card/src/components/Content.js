@@ -6,19 +6,16 @@ function Content() {
 			<article>
 				<h2>About</h2>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-					amet, quo dicta cum eveniet neque illum laborum cumque laboriosam
-					delectus necessitatibus, incidunt aut vero quaerat sint similique
-					ratione, minima quis.
+					I am a frontend developer with a particular interest in making things
+					simple and automating daily tasks. I try to keep up with security and
+					best practices, and am always looking for new things to learn.
 				</p>
 			</article>
 			<article>
 				<h2>Interests</h2>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-					amet, quo dicta cum eveniet neque illum laborum cumque laboriosam
-					delectus necessitatibus, incidunt aut vero quaerat sint similique
-					ratione, minima quis.
+					Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
+					Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
 				</p>
 			</article>
 		</div>
