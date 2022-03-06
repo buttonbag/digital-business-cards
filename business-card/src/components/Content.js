@@ -1,14 +1,19 @@
 import React from 'react';
 
-function Content() {
+function Content(props) {
 	return (
 		<div className="content">
 			<article>
-				<h2>About</h2>
+				<h2>Description</h2>
 				<p>
-					I am a frontend developer with a particular interest in making things
-					simple and automating daily tasks. I try to keep up with security and
-					best practices, and am always looking for new things to learn.
+					{/* height : {props.height}
+					mass : {props.mass}
+					hair_color : {props.hair_color}
+					skin_color : {props.skin_color}
+					eye_color : {props.eye_color}
+					birth_year : {props.birth_year}
+					gender : {props.gender} */}
+					{props.description}
 				</p>
 			</article>
 			<article>

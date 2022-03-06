@@ -1,12 +1,11 @@
-import photo from '../images/Rectangle-90.png';
-import React from 'react';
 
-function Header() {
+
+function Header(props) {
 	return (
 		<header className="header">
-			<img src={photo} alt="#" />
+			<div className="char-img"><img src={`${props.image}/portrait_uncanny.jpg`} alt={props.name} /></div>
 			<div className="info">
-				<h1 className="info--name">Louie Camacho</h1>
+				<h1 className="info--name">{props.name}</h1>
 				<span className="info--role">Lead Frontend Developer</span>
 				<small className="info--site">louiecamacho.com</small>
 			</div>
