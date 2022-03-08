@@ -10,6 +10,22 @@ body {
   padding: 44px;
 }
 
+main.dark {
+  background: #ccc;
+}
+main.dark .header {
+  color: #333;
+}
+main.dark .header .info--role {
+  color: lightslategray;
+}
+main.dark .content {
+  color: #333;
+}
+main.dark .footer {
+  background: #333;
+}
+
 main {
   margin: 0 auto;
   width: 317px;

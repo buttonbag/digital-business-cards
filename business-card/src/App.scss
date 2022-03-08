@@ -12,6 +12,25 @@ body {
 	padding: 44px;
 }
 
+// darkmode
+main.dark {
+	background: #ccc;
+	.header {
+		color: #333;
+		.info {
+			&--role {
+				color: lightslategray;
+			}
+		}
+	}
+	.content {
+		color: #333;
+	}
+	.footer {
+		background: #333;
+	}
+}
+
 main {
 	margin: 0 auto;
 	width: 317px;

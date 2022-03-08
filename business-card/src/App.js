@@ -5,6 +5,12 @@ import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 
 function App() {
+	const [darkMode, setDarkMode] = useState(true);
+
+	function toggleDarkMode() {
+		setDarkMode((prevMode) => !prevMode);
+	}
+
 	const [hero, setHero] = useState({
 		name: 'Harry Potter',
 		species: 'human',
@@ -90,7 +96,7 @@ function App() {
 	// }, []);
 
 	return (
-		<main>
+		<main className={darkMode ? 'dark' : ''}>
 			<Header
 				name={hero.name}
 				image={hero.image}
@@ -110,7 +116,14 @@ function App() {
 				patronus={hero.patronus}
 			/>
 			<button onClick={newHero}>Random Hero</button>
-			<Footer wizard={hero.wizard ? '✨' : ''} house={hero.house} />
+			<button onClick={toggleDarkMode}>
+				{darkMode ? 'dark' : 'light'} mode
+			</button>
+			<Footer
+				wizard={hero.wizard ? '✨' : ''}
+				house={hero.house}
+				toggleDarkMode={toggleDarkMode}
+			/>
 		</main>
 	);
 }
