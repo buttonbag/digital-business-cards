@@ -27,9 +27,14 @@ main .header {
 }
 main .header .char-img {
   overflow: hidden;
-  height: 350px;
+  height: 300px;
   display: flex;
-  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+main .header .char-img img {
+  object-fit: cover;
+  flex: 1 1 auto;
 }
 main .header .info {
   display: flex;

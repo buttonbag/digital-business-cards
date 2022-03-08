@@ -27,9 +27,14 @@ main {
 		flex-direction: column;
 		.char-img {
 			overflow: hidden;
-			height: 350px;
+			height: 300px;
 			display: flex;
-			align-items: center;
+			width: 100%;
+			justify-content: center;
+			img {
+				object-fit: cover;
+				flex: 1 1 auto;
+			}
 		}
 		.info {
 			display: flex;

@@ -3,11 +3,15 @@
 function Header(props) {
 	return (
 		<header className="header">
-			<div className="char-img"><img src={`${props.image}/portrait_uncanny.jpg`} alt={props.name} /></div>
+			<div className="char-img"><img src={props.image} alt={props.name} /></div>
 			<div className="info">
 				<h1 className="info--name">{props.name}</h1>
-				<span className="info--role">Lead Frontend Developer</span>
-				<small className="info--site">louiecamacho.com</small>
+				<span className="info--role">
+					{props.wizard && `wizard ${props.wizard}`}
+					{props.hogwartsStaff && `staff ${props.hogwartsStaff}`}
+					{props.hogwartsStudent && `student ${props.hogwartsStudent}`}
+				</span>
+				<small className="info--site">{props.house}</small>
 			</div>
 			<div className="contact">
 				<div className="btn--email">

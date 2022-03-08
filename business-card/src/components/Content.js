@@ -5,23 +5,18 @@ function Content(props) {
 		<div className="content">
 			<article>
 				<h2>Description</h2>
-				<p>
-					{/* height : {props.height}
-					mass : {props.mass}
-					hair_color : {props.hair_color}
-					skin_color : {props.skin_color}
-					eye_color : {props.eye_color}
-					birth_year : {props.birth_year}
-					gender : {props.gender} */}
-					{props.description}
-				</p>
-			</article>
-			<article>
-				<h2>Interests</h2>
-				<p>
-					Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
-					Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
-				</p>
+				<ul>
+					{props.species && <li>species: {props.species}</li>}
+					{props.gender && <li>gender: {props.gender}</li>}
+					{props.house && <li>house: {props.house}</li>}
+					{props.dateOfBirth && <li>dateOfBirth: {props.dateOfBirth}</li>}
+					{props.yearOfBirth && <li>yearOfBirth: {props.yearOfBirth}</li>}
+					{props.wizard && <li>wizard: {props.wizard}</li>}
+					{props.ancestry && <li>ancestry: {props.ancestry}</li>}
+					{props.eyeColour && <li>eyeColour: {props.eyeColour}</li>}
+					{props.hairColour && <li>hairColour: {props.hairColour}</li>}
+					{props.patronus && <li>patronus: {props.patronus}</li>}
+				</ul>
 			</article>
 		</div>
 	);
